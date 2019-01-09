@@ -36,7 +36,7 @@
       - restart tomcat7  
   - name: coping war file
     copy:
-      src: /home/jenkins/workspace/gol/gameoflife-web/target/gameoflife.war
+      src:  gameoflife.war
       dest: /var/lib/tomcat7/webapps/gameoflife.war  
   handlers:
     - name: restart tomcat7 
